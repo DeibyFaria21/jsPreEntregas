@@ -2,22 +2,56 @@
 let nombreIngresado = prompt("Ingrese su nombre ");
 alert("Bienvenid@ " + nombreIngresado);
 
-//Variables y constantes
-const codigo1 = 24500;
-const codigo2 = 18000;
-const codigo3 = 37100;
-const codigo4 = 19800;
-const codigo5 = 16400;
-const codigo6 = 8600;
+
+//Arrays y objetos
 const coin = "ARS";
+
+productos = [
+    producto1 = {
+        id: 1,
+        categoria: "Teclado mecánico",
+        nombre: "Teclado Logitech G513 Carbon",
+        valor: 24500
+    },
+    producto2 = {
+        id: 2,
+        categoria: "Teclado mecánico",
+        nombre: "Teclado HyperX Alloy Origins",
+        valor: 18000
+    },
+    producto3 = {
+        id: 3,
+        categoria: "Teclado mecánico",
+        nombre: "Teclado ROG Claymore II",
+        valor: 37100
+    },
+    producto4 = {
+        id: 4,
+        categoria: "Teclado de membrana",
+        nombre: "Teclado Corsair K55 RGB",
+        valor: 19800
+    },
+    producto5 = {
+        id: 5,
+        categoria: "Teclado de membrana",
+        nombre: "Teclado Redragon Shiva K512",
+        valor: 16400
+    },
+    producto6 = {
+        id: 6,
+        categoria: "Teclado de membrana",
+        nombre: "Teclado Sentey Acrylix RGB",
+        valor: 8600},
+]
+
 
 //Ciclo con condicional
 for (let i = 1; i <= 7; i++) {
     let consultarProducto = prompt("Desea conocer el precio de uno de nuestros productos?");
     if (consultarProducto == "si"){
-        let productoConsultado = prompt("Cual es el código del producto del que desea conocer el precio?");
+        let productoConsultado = prompt("Cual es el código del producto del que desea conocer el precio?\n\nCódigo: 1 - Teclado Logitech G513 Carbon\nCódigo: 2 - Teclado HyperX Alloy Origins\nCódigo: 3 - Teclado ROG Claymore II\nCódigo: 4 - Teclado Corsair K55 RGB\nCódigo: 5 - Teclado Redragon Shiva K512\nCódigo: 6 - Teclado Sentey Acrylix RGB");
         if (productoConsultado == 1) {
-            alert("El costo del producto sin IVA sería: " + codigo1 + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto1.valor + " " + coin);
         } else if (productoConsultado == 2) {
             alert("El costo del producto sin IVA sería: " + codigo2 + " " + coin);
         } else if (productoConsultado == 3) {
@@ -36,69 +70,3 @@ for (let i = 1; i <= 7; i++) {
     }
     if (consultarProducto == "no") break;
 }
-
-
-
-//Funciones
-let producto = prompt("Ingrese el código del producto del que desea conocer el precio con IVA");
-function calculoIva(producto) {
-    const iva = 1.21;
-    switch (producto) {
-        case "1":
-            return codigo1 * iva;
-            break;
-        case "2":
-            return codigo2 * iva;
-            break;
-        case "3":
-            return codigo3 * iva;
-            break;
-        case "4":
-            return codigo4 * iva;
-            break;
-        case "5":
-            return codigo5 * iva;
-            break;
-        case "6":
-            return codigo6 * iva;
-            break;
-        default:
-        return 0;
-        break;
-    }
-}
-
-
-alert("Para conocer el valor del producto con IVA, acceda a la consola web. Muchas gracias.")
-//Llamando el resultado por la consola
-console.log("El precio con IVA del producto seleccionado es: " + calculoIva(producto));
-
-
-
-alert("Por problemas de logística, podemos realizar envíos de máximo 5 artículos. Disculpe las molestias, aún estamos aprendiendo.");
-//Condicionales
-let cantidadProductos = prompt("Cuantos productos contendrá su orden?")
-if (cantidadProductos == 1) {
-    let productoUno = prompt("Ingrese el código del producto a adquirir:");
-} else if (cantidadProductos == 2) {
-    let productoUno = prompt("Ingrese el código del primer producto:");
-    let productoDos = prompt("Ingrese el código del segundo producto:");
-} else if (cantidadProductos == 3) {
-    let productoUno = prompt("Ingrese el código del primer producto:");
-    let productoDos = prompt("Ingrese el código del segundo producto:");
-    let productoTres = prompt("Ingrese el código del tercer producto:");
-} else if (cantidadProductos == 4) {
-    let productoUno = prompt("Ingrese el código del primer producto:");
-    let productoDos = prompt("Ingrese el código del segundo producto:");
-    let productoTres = prompt("Ingrese el código del tercer producto:");
-    let productoCuatro = prompt("Ingrese el código del cuarto producto:");
-} else if (cantidadProductos == 5) {
-    let productoUno = prompt("Ingrese el código del primer producto:");
-    let productoDos = prompt("Ingrese el código del segundo producto:");
-    let productoTres = prompt("Ingrese el código del tercer producto:");
-    let productoCuatro = prompt("Ingrese el código del cuarto producto:");
-    let productoCinco = prompt("Ingrese el código del quinto producto:");
-} else {
-    alert("Lamentablemente el número ingresado no corresponde con un envío factible por nuestro servicio de logística.")
-}
-
