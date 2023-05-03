@@ -51,17 +51,17 @@ for (let i = 1; i <= 7; i++) {
     if (consultarProducto == "si"){
         let productoConsultado = prompt("Cual es el código del producto del que desea conocer el precio?\n\nCódigo: 1 - Teclado Logitech G513 Carbon\nCódigo: 2 - Teclado HyperX Alloy Origins\nCódigo: 3 - Teclado ROG Claymore II\nCódigo: 4 - Teclado Corsair K55 RGB\nCódigo: 5 - Teclado Redragon Shiva K512\nCódigo: 6 - Teclado Sentey Acrylix RGB");
         if (productoConsultado == 1) {
-            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto1.valor + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto1.valor + "\n" + producto1.nombre + " " + coin);
         } else if (productoConsultado == 2) {
-            alert("El costo del producto sin IVA sería: " + codigo2 + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto2.valor + "\n" + producto2.nombre + " " + coin);
         } else if (productoConsultado == 3) {
-            alert("El costo del producto sin IVA sería: " + codigo3 + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto3.valor + "\n" + producto3.nombre + " " + coin);
         } else if (productoConsultado == 4) {
-            alert("El costo del producto sin IVA sería: " + codigo4 + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto4.valor + "\n" + producto4.nombre + " " + coin);
         } else if (productoConsultado == 5) {
-            alert("El costo del producto sin IVA sería: " + codigo5 + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto5.valor + "\n" + producto5.nombre + " " + coin);
         } else if (productoConsultado == 6) {
-            alert("El costo del producto sin IVA sería: " + codigo6 + " " + coin);
+            alert("El costo del producto sin IVA sería:\n\nPrecio: " + producto6.valor + "\n" + producto6.nombre + " " + coin);
         } else {
             alert("El código ingresado no corresponde con un producto en stock...");
         }
