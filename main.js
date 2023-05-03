@@ -32,7 +32,7 @@ for (let i = 1; i <= 7; i++) {
             alert("El código ingresado no corresponde con un producto en stock...");
         }
     } else if (consultarProducto == "no"){
-        alert("Puede continuar para conocer el costo total a abonar...");
+        alert("Puede continuar para realizar su pedido.");
     }
     if (consultarProducto == "no") break;
 }
