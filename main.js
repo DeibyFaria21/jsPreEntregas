@@ -43,16 +43,41 @@ productosTeclados = [
     },
 ]
 
+let listado = document.querySelector("#listaProductos");
+console.log(listado);
+
+listado.style.textAlign = "center";
+
+
+
 let cardProd = document.getElementsByClassName("card");
-console.log(cardProd);
+console.log(cardProd/* [0].innerHTML */);
+
 
 let cardButton = document.createElement("button");
 cardButton.innerText = "Boton"
+console.log(typeof cardButton);
 
-cardProd[0].appendChild(cardButton);
-cardProd[1].appendChild(cardButton);
+/* function agregarBoton(){
+return
 cardProd[2].appendChild(cardButton);
 cardProd[3].appendChild(cardButton);
+}
+agregarBoton; */
+
+console.log(typeof cardProd);
+console.log(cardProd);
+
+
+/* conclu.push(cardProd); */
+
+
+/* let tarjeta1 = cardProd[2].innerHTML;
+console.log(tarjeta1);
+cardProd.appendChild("cardButton"); */
+
+/* cardProd[2].appendChild(cardButton);
+cardProd[3].appendChild(cardButton);
 cardProd[4].appendChild(cardButton);
-cardProd[5].appendChild(cardButton);
+cardProd[5].appendChild(cardButton); */
 
