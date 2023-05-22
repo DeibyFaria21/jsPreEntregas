@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: JosefinSans-Medium;
-  src: url("../fonts/Josefin_Sans/JosefinSans-Medium.ttf"); }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Kanit', sans-serif; }
 
@@ -15,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(#6221ad, #34035c);
     background-repeat: no-repeat;
     background-size: auto;
-    font-family: JosefinSans-Medium;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.5; }
     body main .keycapstitle {
       text-align: center; }
@@ -27,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(#431675, #250242);
     background-repeat: no-repeat;
     background-size: auto;
-    font-family: JosefinSans-Medium;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.5; }
     body main .keycapstitle {
       text-align: center; }
